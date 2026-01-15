@@ -32,10 +32,36 @@
                <li class="red-btn"><a href="#">Contizer</a></li>
 
                <!-- language selector -->
-               <select id="language-select">
-                  <option value="Spanish">Spanish</option>
-                  <option value="English">English</option>
-               </select>
+               <div class="language-dropdown" id="langDropdown">
+
+                  <!-- Selected -->
+                  <div class="lang-selected">
+                     <img
+                        src="https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/MEX.png">
+                     <span class="lang-code">ES</span>
+
+                     <svg class="arrow" viewBox="0 0 9.283 4.898">
+                        <path
+                           d="M4.641 4.898a.5.5 0 0 1-.343-.136L.158.864A.5.5 0 0 1 .842.136L4.64 3.712 8.44.136a.5.5 0 0 1 .686.729L4.984 4.762a.5.5 0 0 1-.343.136Z" />
+                     </svg>
+                  </div>
+
+                  <!-- Dropdown -->
+                  <div class="lang-menu">
+                     <div class="lang-option" data-lang="ES" data-flag="MEX">
+                        <img
+                           src="https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/MEX.png">
+                        <span class="lang-code">ES</span>
+                     </div>
+
+                     <div class="lang-option" data-lang="EN" data-flag="USA">
+                        <img
+                           src="https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/USA.png">
+                        <span class="lang-code">EN</span>
+                     </div>
+                  </div>
+
+               </div>
 
             </ul>
 
@@ -55,44 +81,48 @@
          <div class="hero-btn">
             <a href="#" class="red-btn">Cotiza Ahora</a>
             <i class="fa fa-mouse" style="font-size:48px;color:black"></i>
-         <a href="#" class="cta-btn">Guía para Cotizar</a>
+            <a href="#" class="cta-btn">Guía para Cotizar</a>
          </div>
       </div>
    </section>
 
-    <!-- Why Work With Us Section -->
-    <section class="why-us">
-        <div class="container">
-            <h2>¿POR QUÉ NOSOTROS?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                     <i class="fa-solid fa-calendar" style="font-size:48px;color:black"></i>
-                    </div>
-                    <h3>La mayor experiencia en MJF del país</h3>
-                </div>
-                <div class="vertical-line"></div>
-
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-gear" style="font-size:48px;color:black"></i>
-</div>
-                    <h3>Piezas funcionales en menos tiempo</h3>
-                </div>
-                <div class="vertical-line"></div>
-
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-industry" style="font-size:48px;color:black"></i>
-</div>
-                    <h3>Gran capacidad de producción</h3>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-gears" style="font-size:48px;color:black"></i>
-</div>
-                    <h3>Materiales avanzados</h3>
-                </div>
+   <!-- Why Work With Us Section -->
+   <section class="why-us">
+      <div class="container">
+         <h2>¿POR QUÉ NOSOTROS?</h2>
+         <div class="features-grid">
+            <div class="vertical-line"></div>
+            <div class="feature-card">
+               <div class="feature-icon">
+                  <i class="fa-solid fa-calendar" style="font-size:48px;color:black"></i>
+               </div>
+               <h3>La mayor experiencia en MJF del país</h3>
             </div>
-        </div>
-    </section>
+            <div class="vertical-line"></div>
+
+
+            <div class="feature-card ">
+               <div class="feature-icon"><i class="fa-solid fa-gear" style="font-size:48px;color:black"></i>
+               </div>
+               <h3>Piezas funcionales en menos tiempo</h3>
+            </div>
+            <div class="vertical-line"></div>
+
+            <div class="feature-card">
+               <div class="feature-icon"><i class="fa-solid fa-industry" style="font-size:48px;color:black"></i>
+               </div>
+               <h3>Gran capacidad de producción</h3>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="feature-card">
+               <div class="feature-icon"><i class="fa-solid fa-gears" style="font-size:48px;color:black"></i>
+               </div>
+               <h3>Materiales avanzados</h3>
+            </div>
+            <div class="vertical-line"></div>
+         </div>
+      </div>
+   </section>
 
    <script src="assets/js/main.js"></script>
 </body>
