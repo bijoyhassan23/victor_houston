@@ -359,7 +359,7 @@
 } */
 
 /* Arrows */
-.arrow {
+/* .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -380,7 +380,7 @@
 .arrow.next {
   right: 15px;
   transform: translateY(-50%) rotate(180deg);
-}
+} */
 
 /* Dots */
 .dots {
@@ -400,4 +400,73 @@
 
 .dots span.active {
   background: #000;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 20px;
+  color: #0078ff;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.name-email {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+      display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #0078ff;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 8px 0;
+  outline: none;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 2px solid #0078ff;
+}
+.form-group input::placeholder, .form-group textarea::placeholder{
+  color: #0078ff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: rgb(252, 227, 0);
+  color: rgb(0, 71, 187);
+  padding: 10px 80px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: white;
 }

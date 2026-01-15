@@ -152,65 +152,85 @@
    <!-- Testimonial Slider -->
    <section class="testimonial">
       <div class="container">
-           <div class="slider">
+         <div class="slider">
 
-      <button class="arrow prev">
-         <svg viewBox="0 0 21 41">
-            <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
-         </svg>
-      </button>
+            <button class="arrow prev">
+               <svg viewBox="0 0 21 41">
+                  <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
+               </svg>
+            </button>
 
-      <button class="arrow next">
-         <svg viewBox="0 0 21 41">
-            <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
-         </svg>
-      </button>
+            <button class="arrow next">
+               <svg viewBox="0 0 21 41">
+                  <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
+               </svg>
+            </button>
 
-      <!-- Slides -->
-      <div class="slider">
+            <!-- Slides -->
+            <div class="slider">
 
-         <div class="slides">
+               <div class="slides">
 
-            <div class="slide  active testimonial-content">
-            <p class="testimonial-text">"La verdad la calidad con la que trabajan ustedes nos sorprende, estamos muy
-               contentos con el trabajo entregado de su parte. Las piezas son prototipos para liberar el diseño a
-               inyectar en plástico y con la calidad que las entregan nos da una idea real de como quedarán las piezas
-               ya inyectadas"</p>
-               <div class="testimonial-author">RIGOBERTO GONZÁLEZ</div>
-               <div class="testimonial-position">Ing. de Proyectos CIDESI</div>
+                  <div class="slide  active testimonial-content">
+                     <p class="testimonial-text">"La verdad la calidad con la que trabajan ustedes nos sorprende,
+                        estamos muy
+                        contentos con el trabajo entregado de su parte. Las piezas son prototipos para liberar el diseño
+                        a
+                        inyectar en plástico y con la calidad que las entregan nos da una idea real de como quedarán las
+                        piezas
+                        ya inyectadas"</p>
+                     <div class="testimonial-author">RIGOBERTO GONZÁLEZ</div>
+                     <div class="testimonial-position">Ing. de Proyectos CIDESI</div>
+                  </div>
+
+                  <div class="slide testimonial-content">
+                     <p class="testimonial-text">
+                        "Excelente servicio y calidad profesional. Sin duda volveríamos a trabajar con ustedes."
+                     </p>
+                     <div class="testimonial-author">HOMERO PÉREZ</div>
+                     <div class="testimonial-position">Director Técnico</div>
+                  </div>
+
+                  <div class="slide testimonial-content">
+                     <p class="testimonial-text">
+                        "Las piezas entregadas superaron nuestras expectativas."
+                     </p>
+                     <div class="testimonial-author">CARLOS RAMÍREZ</div>
+                     <div class="testimonial-position">Ingeniero Senior</div>
+                  </div>
+
+               </div>
+
+               <!-- Dots -->
+               <div class="dots">
+                  <span class="active"></span>
+                  <span></span>
+                  <span></span>
+               </div>
             </div>
-
-            <div class="slide testimonial-content">
-               <p class="testimonial-text">
-                  "Excelente servicio y calidad profesional. Sin duda volveríamos a trabajar con ustedes."
-               </p>
-               <div class="testimonial-author">HOMERO PÉREZ</div>
-               <div class="testimonial-position">Director Técnico</div>
-            </div>
-
-            <div class="slide testimonial-content">
-               <p class="testimonial-text">
-                  "Las piezas entregadas superaron nuestras expectativas."
-               </p>
-               <div class="testimonial-author">CARLOS RAMÍREZ</div>
-               <div class="testimonial-position">Ingeniero Senior</div>
-            </div>
-
          </div>
-
-         <!-- Dots -->
-         <div class="dots">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-         </div>
-      </div>
-   </div>
       </div>
    </section>
 
    <!-- testimonial slide end -->
 
+   <!-- Contact Section -->
+   <section class="contact" id="contact">
+      <div class="">
+         <h2>Conoce el Futuro de la Manufactura</h2>
+         <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group name-email">
+               <input placeholder="Nombre" type="text" id="name" required>
+               <input placeholder="email" type="email" id="email" required>
+            </div>
+            <div class="form-group">
+               <textarea placeholder="¿Cómo te podemos ayudar?" id="message" required></textarea>
+            <input name="phone"  type="tel" placeholder="Telefono/whatsapp"value="">
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+         </form>
+      </div>
+   </section>
 
 
    <!-- Footer -->
