@@ -1,15 +1,18 @@
- <!DOCTYPE html>
- <html lang="es">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bojä 3d | Impresión 3D | Manufactura Aditiva | Santiago de Querétaro</title>
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/main.css">
- </head>
- <body>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bojä 3d | Impresión 3D | Manufactura Aditiva | Santiago de Querétaro</title>
+   <link rel="stylesheet" href="assets/css/global.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <script src="https://kit.fontawesome.com/b6846912bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
    <!-- Header -->
-    <header class="header">
+   <header class="header">
       <div class="container nav-container">
          <a href="/"><img class="logo" src="assets/images/boja3d.svg" alt="Bojä 3d"></a>
          <nav class="nav-items">
@@ -26,13 +29,73 @@
                      <li><a href="#">Servicios</a></li>
                   </ul>
                </li>
-               <li><a href="#">Contizer</a></li>
-            </ul>
-         </nav>
-      </div>
-    </header>
+               <li class="red-btn"><a href="#">Contizer</a></li>
 
-    <script src="assets/js/main.js"></script>
- </body>
- </html>
- <!-- test -->
+               <!-- language selector -->
+               <select id="language-select">
+                  <option value="Spanish">Spanish</option>
+                  <option value="English">English</option>
+               </select>
+
+            </ul>
+
+         </nav>
+
+      </div>
+   </header>
+
+   <!-- Hero Section -->
+   <section class="hero-section">
+      <div class="hero">
+         <h1>Manufactura Aditiva Industrial</h1>
+         <p>No importa si el diseño es muy complejo, si no tienes experiencia con impresión 3D o si se requieren muchos
+            cambios, tenemos una solución en 3D a tu medida</p>
+         <p>Ahora somos parte de <strong>i-SOLIDS</strong>, fabricante líder en EUA con múltiples tecnologías de
+            impresión 3D industrial. Contamos con cotización al instante aquí:</p>
+         <div class="hero-btn">
+            <a href="#" class="red-btn">Cotiza Ahora</a>
+            <i class="fa fa-mouse" style="font-size:48px;color:black"></i>
+         <a href="#" class="cta-btn">Guía para Cotizar</a>
+         </div>
+      </div>
+   </section>
+
+    <!-- Why Work With Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <h2>¿POR QUÉ NOSOTROS?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                     <i class="fa-solid fa-calendar" style="font-size:48px;color:black"></i>
+                    </div>
+                    <h3>La mayor experiencia en MJF del país</h3>
+                </div>
+                <div class="vertical-line"></div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-gear" style="font-size:48px;color:black"></i>
+</div>
+                    <h3>Piezas funcionales en menos tiempo</h3>
+                </div>
+                <div class="vertical-line"></div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-industry" style="font-size:48px;color:black"></i>
+</div>
+                    <h3>Gran capacidad de producción</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-gears" style="font-size:48px;color:black"></i>
+</div>
+                    <h3>Materiales avanzados</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+<!-- test -->
