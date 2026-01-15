@@ -187,6 +187,7 @@
 
 /* Why Work With Us Section */
 .why-us {
+  width: 100%;
   padding: 80px 20px;
   background: rgb(252, 227, 0);
 }
@@ -288,4 +289,115 @@
 .service-overlay h3 {
   font-size: 1.8rem;
   text-transform: uppercase;
+}
+
+/* Testimonial Section */
+.testimonial {
+  width: 100%;
+  padding: 80px 20px;
+  background: rgb(252, 227, 0);
+  color: black;
+}
+
+.testimonial-content {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.testimonial-text {
+  /* font-size: 1.2rem; */
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.testimonial-position {
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* .slider {
+  width: 700px;
+  background: #fff;
+  padding: 50px 70px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+} */
+
+/* .slides {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+} */
+
+/* .slide {
+  display: none;
+} */
+
+/* .slide.active {
+  display: block;
+} */
+
+
+/* .name {
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: .05em;
+} */
+
+/* .role {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  margin-top: 5px;
+} */
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow svg {
+  width: 18px;
+  height: 36px;
+}
+
+.arrow.prev {
+  left: 15px;
+}
+
+.arrow.next {
+  right: 15px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background: #000;
 }
