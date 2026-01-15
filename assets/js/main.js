@@ -21,34 +21,36 @@ document.addEventListener('click', e=>{
   }
 });
 
+
+
 // testimonial slider
-// const slides = document.querySelectorAll('.slide');
-// const dots = document.querySelectorAll('.dots span');
-// let index = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dots span');
+let index = 0;
 
-// function showSlide(i){
-//   slides.forEach(s=>s.classList.remove('active'));
-//   dots.forEach(d=>d.classList.remove('active'));
-//   slides[i].classList.add('active');
-//   dots[i].classList.add('active');
-// }
+function showSlide(i){
+  slides.forEach(s=>s.classList.remove('active'));
+  dots.forEach(d=>d.classList.remove('active'));
+  slides[i].classList.add('active');
+  dots[i].classList.add('active');
+}
 
-// document.querySelector('.next').onclick = ()=>{
-//   index = (index + 1) % slides.length;
-//   showSlide(index);
-// };
+document.querySelector('.next').onclick = ()=>{
+  index = (index + 1) % slides.length;
+  showSlide(index);
+};
 
-// document.querySelector('.prev').onclick = ()=>{
-//   index = (index - 1 + slides.length) % slides.length;
-//   showSlide(index);
-// };
+document.querySelector('.prev').onclick = ()=>{
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+};
 
-// dots.forEach((dot,i)=>{
-//   dot.onclick = ()=>{
-//     index = i;
-//     showSlide(i);
-//   };
-// });
+dots.forEach((dot,i)=>{
+  dot.onclick = ()=>{
+    index = i;
+    showSlide(i);
+  };
+});
 
 // const slides = document.querySelector('.slides');
 // const dots = document.querySelectorAll('.dots span');
@@ -77,3 +79,5 @@ document.addEventListener('click', e=>{
 //     showSlide(i);
 //   };
 // });
+
+// Nav
