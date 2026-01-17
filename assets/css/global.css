@@ -46,10 +46,11 @@ a {
 
 body {
   font-family: "Avenir", sans-serif;
+  width: 100%;
 }
 
 .container {
-  width: 1160px;
+  max-width: 1160px;
   margin: auto;
   padding: 0px 20px;
 }/*# sourceMappingURL=global.css.map */

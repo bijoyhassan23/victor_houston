@@ -1,17 +1,25 @@
- <!DOCTYPE html>
- <html lang="es">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bojä 3d | Impresión 3D | Manufactura Aditiva | Santiago de Querétaro</title>
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/main.css">
- </head>
- <body>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bojä 3d | Impresión 3D | Manufactura Aditiva | Santiago de Querétaro</title>
+   <link rel="stylesheet" href="assets/css/global.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <script src="https://kit.fontawesome.com/b6846912bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
    <!-- Header -->
-    <header class="header">
+   <header class="header">
       <div class="container nav-container">
          <a href="/"><img class="logo" src="assets/images/boja3d.svg" alt="Bojä 3d"></a>
+         <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+           </button>
          <nav class="nav-items">
             <ul>
                <li><a href="#">Home</a></li>
@@ -26,12 +34,264 @@
                      <li><a href="#">Servicios</a></li>
                   </ul>
                </li>
-               <li><a href="#">Contizer</a></li>
-            </ul>
-         </nav>
-      </div>
-    </header>
+               <li class="red-btn"><a href="#">Contizer</a></li>
 
-    <script src="assets/js/main.js"></script>
- </body>
- </html>
+               <!-- language selector -->
+               <div class="language-dropdown" id="langDropdown">
+
+                  <!-- Selected -->
+                  <div class="lang-selected">
+                     <img
+                        src="https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/MEX.png">
+                     <span class="lang-code">ES</span>
+
+                     <svg class="arrow" viewBox="0 0 9.283 4.898">
+                        <path
+                           d="M4.641 4.898a.5.5 0 0 1-.343-.136L.158.864A.5.5 0 0 1 .842.136L4.64 3.712 8.44.136a.5.5 0 0 1 .686.729L4.984 4.762a.5.5 0 0 1-.343.136Z" />
+                     </svg>
+                  </div>
+
+                  <!-- Dropdown -->
+                  <div class="lang-menu">
+                     <div class="lang-option" data-lang="ES" data-flag="MEX">
+                        <img
+                           src="https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/MEX.png">
+                        <span class="lang-code">ES</span>
+                     </div>
+
+                     <div class="lang-option" data-lang="EN" data-flag="USA">
+                        <img
+                           src="https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/USA.png">
+                        <span class="lang-code">EN</span>
+                     </div>
+                  </div>
+
+               </div>
+
+            </ul>
+
+         </nav>
+
+      </div>
+   </header>
+
+   <!-- Hero Section -->
+   <section class="hero-section">
+      <div class="hero">
+         <h1>Manufactura Aditiva Industrial</h1>
+         <p>No importa si el diseño es muy complejo, si no tienes experiencia con impresión 3D o si se requieren muchos
+            cambios, tenemos una solución en 3D a tu medida</p>
+         <p>Ahora somos parte de <strong>i-SOLIDS</strong>, fabricante líder en EUA con múltiples tecnologías de
+            impresión 3D industrial. Contamos con cotización al instante aquí:</p>
+         <div class="hero-btn">
+            <a href="#" class="red-btn">Cotiza Ahora</a>
+            <div class="overflow"><i class="mouse fa fa-mouse"></i></div>
+            <a href="#" class="cta-btn">Guía para Cotizar</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Why Work With Us Section -->
+   <section class="why-us" id="features">
+      <div class="container">
+         <h2>¿POR QUÉ NOSOTROS?</h2>
+         <div class="features-grid">
+            <div class="vertical-line"></div>
+            <div class="feature-card">
+               <div class="feature-icon">
+                  <i class="fa-solid fa-calendar" style="font-size:48px;color:black"></i>
+               </div>
+               <h3 class="anim-head ">La mayor experiencia en MJF del país</h3>
+            </div>
+            <div class="vertical-line"></div>
+
+
+            <div class="feature-card ">
+               <div class="feature-icon"><i class="fa-solid fa-gear" style="font-size:48px;color:black"></i>
+               </div>
+               <h3 class="anim-head ">Piezas funcionales en menos tiempo</h3>
+            </div>
+            <div class="vertical-line"></div>
+
+            <div class="feature-card">
+               <div class="feature-icon"><i class="fa-solid fa-industry" style="font-size:48px;color:black"></i>
+               </div>
+               <h3 class="anim-head ">Gran capacidad de producción</h3>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="feature-card">
+               <div class="feature-icon"><i class="fa-solid fa-gears" style="font-size:48px;color:black"></i>
+               </div>
+               <h3 class="anim-head ">Materiales avanzados</h3>
+            </div>
+            <div class="vertical-line"></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Our Services Section -->
+   <section class="services" id="services">
+      <div class="container">
+         <h2 class="nu-service">NUESTROS SERVICIOS</h2>
+         <div class="service-grid">
+            <div class="service-card">
+               <img
+                  src="https://static.wixstatic.com/media/ba3dc1_b3c25ac106444ff38716c158c8f3b5a9~mv2.jpg/v1/crop/x_0,y_49,w_980,h_182/fill/w_980,h_182,al_c,q_80,enc_avif,quality_auto/multi-jet-fusion.jpg"
+                  alt="Multi Jet Fusion">
+               <div class="service-overlay">
+                  <h3>MultiJet Fusion</h3>
+               </div>
+            </div>
+            <div class="service-card">
+               <img
+                  src="https://static.wixstatic.com/media/0d5a75987f1c474494bfe316be9afd6e.jpg/v1/crop/x_0,y_882,w_5760,h_1076/fill/w_980,h_181,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Car%20Design.jpg"
+                  alt="Optimización y Diseño">
+               <div class="service-overlay">
+                  <h3>Optimización y Diseño</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Testimonial Slider -->
+   <section class="testimonial">
+       <button class="arrow-s prev">
+                  <svg viewBox="0 0 21 41">
+                     <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
+                  </svg>
+               </button>
+
+               <button class="arrow-s next">
+                  <svg viewBox="0 0 21 41">
+                     <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
+                  </svg>
+               </button>
+      <div class="container">
+         <div class="slider">
+            <div class="slides">
+              
+
+               <div class="slide active">
+                  <p class="testimonial-text">"La verdad la calidad con la que trabajan ustedes nos sorprende,
+                     estamos muy contentos con el trabajo entregado de su parte. Las piezas son prototipos para liberar
+                     el diseño
+                     a inyectar en plástico y con la calidad que las entregan nos da una idea real de como quedarán las
+                     piezas ya inyectadas"</p>
+                  <div class="testimonial-author">RIGOBERTO GONZÁLEZ</div>
+                  <div class="testimonial-position">Ing. de Proyectos CIDESI</div>
+               </div>
+
+               <div class="slide">
+                  <p class="testimonial-text">
+                     "En Bojä 3d encontramos solución a nuestros requerimientos, además de encontrar un plus muy
+                     importante; un servicio excelente, rápido y efectivo."
+                  </p>
+                  <div class="testimonial-author">OSCAR HERIBERTO RAMIREZ</div>
+                  <div class="testimonial-position">Ingeniero de Producto</div>
+               </div>
+
+               <div class="slide">
+                  <p class="testimonial-text">
+                     "No solo la calidad de Bojä 3d es extraordinaria sino también sus atenciones y el trato que dan al
+                     cliente. Trabajar mi proyecto con ellos fue una muy grata experiencia, los recomiendo ampliamente."
+                  </p>
+                  <div class="testimonial-author">HOMERO RAMIREZ TENA</div>
+                  <div class="testimonial-position">Director de Cine / Animador Stop Motion</div>
+               </div>
+            </div>
+
+            <!-- Dots -->
+            <div class="dots">
+               <span class="active"></span>
+               <span></span>
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- testimonial slide end -->
+
+   <!-- Contact Section -->
+   <section class="contact" id="contact">
+      <div class="">
+         <h2>Conoce el Futuro de la Manufactura</h2>
+         <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group name-email">
+               <input placeholder="Nombre" type="text" id="name" required>
+               <input placeholder="email" type="email" id="email" required>
+            </div>
+            <div class="form-group">
+               <textarea placeholder="¿Cómo te podemos ayudar?" id="message" required></textarea>
+               <input name="phone" type="tel" placeholder="Telefono/whatsapp" value="">
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+         </form>
+      </div>
+   </section>
+
+   <!-- chatboot -->
+
+   <div class="chat-widget-container">
+      <button class="chat-button" id="chatButton">
+         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32" class="chat-icon">
+            <path
+               d="M16 2C8.28 2 2 7.8 2 14.93a12.144 12.144 0 001.696 6.15l-1.668 7.51A1.16 1.16 0 003.63 29.9l6.914-3.072A14.835 14.835 0 0016 27.861c7.72 0 14-5.8 14-12.93S23.72 2 16 2zm4.508 16.32h-9.016a1.16 1.16 0 010-2.32h9.016a1.16 1.16 0 010 2.32zm0-4.638h-9.016a1.16 1.16 0 010-2.318h9.016a1.16 1.16 0 110 2.318z"
+               fill="currentColor"></path>
+         </svg>
+         <span class="chat-text"></span>
+      </button>
+   </div>
+
+   <footer class="site-footer">
+      <div class="footer-container">
+
+         <div class="footer-col ft-col-1">
+            <h2 class="footer-title">NOSOTROS</h2>
+            <p class="footer-text">
+               Bojä 3d es la primer empresa en Latinoamérica que implementó la tecnología de Manufactura Aditiva
+               Industrial (impresión 3D) Multi Jet Fusion de HP, la cual permite niveles producción en serie con piezas
+               100% funcionales y materiales avanzados no antes vistos y con libertad de diseño que solo es posible con
+               este proceso. Desde 2022 formamos parte de </p>
+            <span>
+               <a href="#" class="footer-btn">Webinars</a>
+            </span>
+         </div>
+
+         <div class="footer-col">
+            <span>
+               <h3 class="footer-subtitle">Planta</h3>
+               <p class="footer-text">21602 E Hardy Rd<br>Houston, Texas 77073<br>E.U.A</p>
+            </span>
+
+            <p class="footer-text"><a href="mailto:ventas@boja3d.mx">ventas@boja3d.mx</a></p>
+         </div>
+
+         <div class="footer-col">
+
+            <div>
+               <h3 class="footer-subtitle">Atención en Español</h3>
+               <p class="footer-text">Whatsapp: <a href="https://wa.me/524427213297">+52 442 721-3297</a></p>
+
+            </div>
+            <span>
+               <div class="footer-bottom-links">
+                  <a href="/aviso-de-privacidad">Aviso de privacidad</a>
+                  <p>© 2024 Bojä 3d / i-SOLIDS</p>
+               </div>
+               <div class="social-icons" style="margin-top: 20px;">
+                  <a class="fa-brands fa-linkedin-in" style="font-size:25px;" href="#" title="LinkedIn"></a>
+                  <a class="fa-brands fa-facebook" style="font-size:25px;" href="#" title="Facebook"></a>
+                  <a class="fa-brands fa-instagram" style="font-size:25px;" href="#" title="Instagram"></a>
+               </div>
+            </span>
+         </div>
+
+      </div>
+   </footer>
+
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+<!-- test -->
