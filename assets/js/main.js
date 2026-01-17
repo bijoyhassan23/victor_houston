@@ -8,17 +8,6 @@ menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
 });
 
-// Mobile submenu toggle
-document.querySelectorAll('.nav-items li').forEach(item => {
-  if (item.querySelector('.sub-menu')) {
-    item.addEventListener('click', () => {
-      if (window.innerWidth < 992) {
-        item.classList.toggle('open');
-      }
-    });
-  }
-});
-
 
 // Language Selector
 const dropdown = document.getElementById('langDropdown');
