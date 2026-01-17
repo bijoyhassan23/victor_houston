@@ -108,4 +108,33 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// Nav
+// animatin load
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const headings = entry.target.querySelectorAll('.anim-head');
+      headings.forEach((heading, i) => {
+        setTimeout(() => {
+          heading.classList.add('animate');
+        }, i * 500)
+      });
+    }
+  });
+}, { threshold: 0.3 });
+
+observer.observe(document.querySelector('#features'));
+
+// service animate
+const observer1 = new IntersectionObserver((entries) => {
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const services = entry.target.querySelectorAll('.service-card');
+      services.forEach((service,i)=>{
+        setTimeout(()=>{
+          service.style.animation='fadeRight 1.7s ease-in-out forwards'; 
+        },i*500)
+      })
+    }
+  })
+},{threshold:0.3});;
+observer1.observe(document.querySelector('#services'));

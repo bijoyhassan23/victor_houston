@@ -201,6 +201,11 @@
     transform: translateY(-90px);
     opacity: 0;
   }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
 }
 
 /* Why Work With Us Section */
@@ -251,7 +256,12 @@
 
 /* heading animation */
 .anim-head {
-  animation: fadeInUp 1.5s ease-in-out;  
+      opacity: 0;
+    transform: translateY(50px);
+}
+
+.anim-head.animate {
+    animation: fadeInUp 1.5s ease-in-out forwards;
 }
 
 @keyframes fadeInUp {
@@ -259,6 +269,11 @@
     opacity: 0;
     transform: translateY(80px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 
 }
 
@@ -282,20 +297,24 @@
 }
 
 .service-card {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.service-card {
   position: relative;
   height: 182px;
   width: 980px;
-  /* border-radius: 10px; */
-  overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.3s;
-  animation: fadeRight 1.5s ease-in-out;
 }
 @keyframes fadeRight {
   0% {
     opacity: 0;
     transform: translateX(100px);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
