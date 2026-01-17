@@ -325,7 +325,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   padding: 40px 20px;
   background: rgb(252, 227, 0);
   color: black;
@@ -388,14 +388,13 @@
 /* Arrows */
 .arrow-s {
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
   transform: translateY(-50%);
   background: transparent;
   border: none;
   cursor: pointer;
   width: 50px;
   height: 50px;
-  /* border-radius: 50%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,12 +409,13 @@
   width: 18px;
   height: 36px;
   fill: #000;
+  font-weight: bold;
 }
 .arrow-s.prev {
-  left: 15px;
+  left: 100px;
 }
 .arrow-s.next {
-  right: 15px;
+  right: 100px;
   transform: translateY(-50%) rotate(180deg);
 }
 .arrow-s.next:hover {
@@ -572,7 +572,7 @@
 .chat-widget-container {
   position: fixed;
   bottom: 20px;
-  right: 40px;
+  right: 20px;
   z-index: 9999;
 }
 .chat-button {
@@ -692,8 +692,8 @@
     font-size: 24px;
   }
   .testimonial {
-    min-height: 350px;
-    padding: 60px 20px;
+    min-height: 600px;
+    padding: 0;
   }
   .testimonial-text {
     font-size: 1rem;
