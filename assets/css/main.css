@@ -257,7 +257,7 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(80px);
   }
 
 }
@@ -290,6 +290,13 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.3s;
+  animation: fadeRight 1.5s ease-in-out;
+}
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 }
 
 .service-card:hover {
