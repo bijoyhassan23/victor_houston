@@ -181,8 +181,26 @@
   color: white;
   font-weight: 500;
   font-size: 20px;
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
   text-decoration: underline;
+}
+
+/* MOuse Icon Animation */
+.overflow {
+  overflow: hidden;
+}
+
+.mouse {
+  font-size: 48px;
+  color: white;
+  animation: slideDown 1.5s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
 }
 
 /* Why Work With Us Section */
@@ -375,7 +393,7 @@
 }
 
 .arrow-s:hover {
-  background:transparent;
+  background: transparent;
   transform: translateY(-50%) scale(1.1);
 }
 
