@@ -164,7 +164,7 @@ if (contactForm) {
 
     const formData = new FormData(contactForm);
 
-    fetch('http://send-email.local/wp-content/plugins/email/send-mail.php', {
+    fetch('/assets/php/send-mail.php', {
       method: 'POST',
       body: formData
     })
