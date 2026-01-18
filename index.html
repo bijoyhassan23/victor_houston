@@ -19,7 +19,7 @@
             <span></span>
             <span></span>
             <span></span>
-           </button>
+         </button>
          <nav class="nav-items">
             <ul>
                <li><a href="#">Home</a></li>
@@ -156,21 +156,21 @@
 
    <!-- Testimonial Slider -->
    <section class="testimonial">
-       <button class="arrow-s prev">
-                  <svg viewBox="0 0 21 41">
-                     <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
-                  </svg>
-               </button>
+      <button class="arrow-s prev">
+         <svg viewBox="0 0 21 41">
+            <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
+         </svg>
+      </button>
 
-               <button class="arrow-s next">
-                  <svg viewBox="0 0 21 41">
-                     <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
-                  </svg>
-               </button>
+      <button class="arrow-s next">
+         <svg viewBox="0 0 21 41">
+            <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z" />
+         </svg>
+      </button>
       <div class="container">
          <div class="slider">
             <div class="slides">
-              
+
 
                <div class="slide active">
                   <p class="testimonial-text">"La verdad la calidad con la que trabajan ustedes nos sorprende,
@@ -216,17 +216,27 @@
    <section class="contact" id="contact">
       <div class="">
          <h2>Conoce el Futuro de la Manufactura</h2>
-         <form class="contact-form" onsubmit="handleSubmit(event)">
+         <form class="contact-form" id="contact-form">
+                        <!-- <div id="form-messages"></div> -->
+
+            <input type="hidden" name="token" value="8gfySgbWTXnJLbZvLS#USJfHZmyXcgv8nET!iZDlvA0XMDPuveDfonuqGOi8rPs5">
             <div class="form-group name-email">
-               <input placeholder="Nombre" type="text" id="name" required>
-               <input placeholder="email" type="email" id="email" required>
+               <input placeholder="Nombre" type="text" name="name" required>
+               <input placeholder="Email" type="email" name="email" required>
             </div>
+
             <div class="form-group">
-               <textarea placeholder="¿Cómo te podemos ayudar?" id="message" required></textarea>
-               <input name="phone" type="tel" placeholder="Telefono/whatsapp" value="">
+               <textarea placeholder="¿Cómo te podemos ayudar?" name="message" required></textarea>
+               <input name="phone" type="tel" placeholder="Telefono / WhatsApp">
+                        <!-- <div id="form-messages"></div> -->
+
             </div>
+            <div id="form-messages"></div>
             <button type="submit" class="submit-btn">Enviar</button>
+                    <!-- <div id="form-messages"></div> -->
+
          </form>
+
       </div>
    </section>
 

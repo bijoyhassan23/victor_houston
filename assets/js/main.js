@@ -141,15 +141,55 @@ observer.observe(document.querySelector('#features'));
 
 // service animate
 const observer1 = new IntersectionObserver((entries) => {
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
       const services = entry.target.querySelectorAll('.service-card');
-      services.forEach((service,i)=>{
-        setTimeout(()=>{
-          service.style.animation='fadeRight 1.7s ease-in-out forwards'; 
-        },i*500)
+      services.forEach((service, i) => {
+        setTimeout(() => {
+          service.style.animation = 'fadeRight 1.7s ease-in-out forwards';
+        }, i * 500)
       })
     }
   })
-},{threshold:0.3});;
+}, { threshold: 0.3 });;
 observer1.observe(document.querySelector('#services'));
+
+// Contact Form Submission
+const contactForm = document.getElementById('contact-form');
+const formMessages = document.getElementById('form-messages');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    fetch('http://send-email.local/wp-content/plugins/email/send-mail.php', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => {
+        console.log('Response status:', response.status);
+        if (response.ok) {
+          return response.text();
+        }
+        throw new Error('Network response was not ok.');
+      })
+      .then(data => {
+        formMessages.textContent = data;
+        formMessages.style.color = 'green';
+        formMessages.style.textAlign = 'center';
+        formMessages.style.fontWeight = 'bolder';
+        formMessages.style.paddingBottom = '15px';
+        contactForm.reset();
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        formMessages.textContent = 'An error occurred while sending the message.';
+        formMessages.style.color = 'red';
+        formMessages.style.textAlign = 'center';
+        formMessages.style.fontWeight = 'bold';
+      });
+  });
+}
+
