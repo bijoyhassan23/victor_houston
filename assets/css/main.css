@@ -85,6 +85,9 @@
 }
 /* Selected */
 .lang-selected {
+  display: none !important;
+}
+.lang-selected {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -218,7 +221,7 @@
 }
 .features-grid {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -356,7 +359,7 @@
   text-align: center;
   opacity: 0;
   transform: translateX(100%);
-  transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.9s cubic-bezier(0.68, 0, 0.265, 1);
 }
 .slide.active {
   position: relative;
@@ -570,6 +573,7 @@
 }
 /* chatboot */
 .chat-widget-container {
+  display: none !important;
   position: fixed;
   bottom: 20px;
   right: 20px;
